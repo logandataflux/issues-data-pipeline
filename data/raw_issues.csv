@@ -1,5 +1,138 @@
 id,title,state,created_at,updated_at
-4340339127,storage: DetectCacheInconsistency checker fails on large API collections,open,2026-04-28T03:15:51Z,2026-04-28T03:18:30Z
+4342311639,subPath for Image as Volume not working,open,2026-04-28T10:16:07Z,2026-04-28T13:00:49Z
+4341328376,[Flaking issue] POD Resources API base pod expectation mismatch without SRIOV devices in the system with CPU manager Static policy with reserved system CPUs,open,2026-04-28T07:24:03Z,2026-04-28T07:25:08Z
+4341136061,Kubelet starts pods before CNI is configured,open,2026-04-28T06:43:31Z,2026-04-28T14:47:05Z
+4340339127,storage: DetectCacheInconsistency checker fails on large API collections,open,2026-04-28T03:15:51Z,2026-04-28T10:23:36Z
+4337258743,CoreDNS restart loop / FailedCreatePodSandBox due to flannel subnet.env race condition,closed,2026-04-27T16:25:17Z,2026-04-28T07:39:52Z
 4334820100,[Flaking tests] k8s.io/kubernetes/test/integration/auth - TestConstrainedImpersonation,open,2026-04-27T09:58:22Z,2026-04-27T11:52:37Z
 4332894561,[Flaking Test] integration/apiserver: admissionwebhook,open,2026-04-27T03:28:13Z,2026-04-27T03:29:03Z
 4332846033,"[Flaking Issue] DevicePlugin Does not keep device plugin assignments across node reboots if fails admission (no pod restart, no device plugin re-registration)",open,2026-04-27T03:11:02Z,2026-04-27T07:58:48Z
+4330295763,docs: add CLAUDE.md and AGENTS.md for AI assistant codebase orientation,closed,2026-04-26T07:17:23Z,2026-04-26T07:40:46Z
+4328948843,Server certificate for pkgs.k8s.io is expired at Apr 25 2026,closed,2026-04-25T18:48:34Z,2026-04-25T19:33:08Z
+4327222963,scheduler-perf improvement for WAS,open,2026-04-25T05:46:45Z,2026-04-28T12:28:30Z
+4322934447,Promote Workload API to v1alpha3 and remove v1alpha2,open,2026-04-24T12:35:46Z,2026-04-25T05:03:54Z
+4322554246,Feature Request: Add parallelism / max concurrent jobs support to CronJob,open,2026-04-24T11:21:14Z,2026-04-24T11:40:12Z
+4319156490,Watchlist does not make progress in a high load environment,open,2026-04-23T22:04:17Z,2026-04-27T07:11:36Z
+4318527729,kubelet does not start when kubelet folder is on ZFS filesystem because of missing cadvisor plugin in 1.36.0,closed,2026-04-23T20:00:17Z,2026-04-27T18:04:05Z
+4317694875,Established Watch with VeryShortWatch error forces a relist.,open,2026-04-23T17:29:11Z,2026-04-23T17:34:48Z
+4317105785,Tracking TODO items when we cut new releases,open,2026-04-23T15:34:25Z,2026-04-27T03:40:24Z
+4315837722,Pods with required anti-affinity configured are scheduled to the same node.,open,2026-04-23T12:16:05Z,2026-04-24T01:17:06Z
+4315173247,kubeadm init Unable to connect GET https://172.20.10.4:6443/healthz,closed,2026-04-23T10:08:55Z,2026-04-23T20:21:00Z
+4313785585,[pkgs.k8s.io] `cri-tools` and `kubernetes-cni` packages are missing in v1.36 repo,closed,2026-04-23T05:41:19Z,2026-04-24T19:15:22Z
+4312756646,new DNS test failing on ipv6,closed,2026-04-23T01:19:43Z,2026-04-23T18:38:48Z
+4311919862,KEP-5304: DecodeMetadataFromStream silently skips malformed metadata for registered API versions,open,2026-04-22T21:18:49Z,2026-04-22T21:19:35Z
+4311029215,"[SIG Node][Failing Test] ""Ensure Credential Pulled Images pulling images with credentials [FeatureGate:KubeletEnsureSecretPulledImages] ...""",open,2026-04-22T18:22:47Z,2026-04-28T13:11:59Z
+4310398514,"""containerStatus.user.linux.uid rejects valid Linux UIDs > INT32_MAX""",open,2026-04-22T16:25:13Z,2026-04-28T02:40:15Z
+4310090609,NUMA locality of both CPU and memory cannot be fully achieved,open,2026-04-22T15:30:33Z,2026-04-24T12:19:33Z
+4309151414,`kubectl diff` on Windows: Specifying a path with spaces to diff.exe via `KUBECTL_EXTERNAL_DIFF` fails,closed,2026-04-22T12:57:32Z,2026-04-23T08:19:14Z
+4308790023,Error kubectl copying many small files to PV (NFS and longhorn),open,2026-04-22T11:53:10Z,2026-04-27T18:09:33Z
+4308496024,Reuse the framework introduced in TAS integration tests to build integration tests for WAS,open,2026-04-22T10:58:53Z,2026-04-22T11:02:35Z
+4307157056,"Kubelet regression in 1.32, 1.31 and possibly 1.33 and 1.34 where pods get stuck in RunContainerError on OS with cgroupv1",open,2026-04-22T06:32:06Z,2026-04-28T06:58:17Z
+4303288008,HPA tolerance check causes unexpected scale-up during rolling updates,open,2026-04-21T14:29:42Z,2026-04-21T14:32:35Z
+4300963802,Memory Manager static policy rejects TopologyManager best-effort cross-NUMA hints causing UnexpectedAdmissionError,open,2026-04-21T07:18:38Z,2026-04-21T11:35:21Z
+4300869265,apiserver: consistent read fallback to etcd can overload apiserver and etcd when watch cache is behind,open,2026-04-21T06:57:47Z,2026-04-28T08:12:07Z
+4299667193,Failure cluster [998d43be...] [sig-node] MemoryQoS [Serial] feature rollback should reset memory protection to 0 when MemoryQoS is disabled,closed,2026-04-21T01:21:55Z,2026-04-21T01:55:36Z
+4297067026,[Failing Test] ci-kubernetes-e2e-gce-scale-performance-100 PreTestCmd,closed,2026-04-20T16:09:48Z,2026-04-21T10:41:21Z
+4294577029,APF: make list max seat cap configurable or scalable for large clusters,open,2026-04-20T09:24:17Z,2026-04-22T11:34:48Z
+4292859370,PodLevelResources: Why is pod created when resource requests exceed limits? (K8s 1.34.5),open,2026-04-20T03:10:35Z,2026-04-23T20:17:22Z
+4292645469,[Failing Test] feature rollback should reset memory protection to 0 when MemoryQoS is disabled,closed,2026-04-20T01:52:26Z,2026-04-21T02:11:53Z
+4291044162,API Server sending webhook requests to non-ready Pods,open,2026-04-19T14:01:52Z,2026-04-19T14:06:33Z
+4289903547,[Failing Test] [sig-auth] TestNodeAuthorization failing in pull-kubernetes-integration with pod not found,closed,2026-04-19T04:21:29Z,2026-04-28T10:38:17Z
+4288965915,Add support for built-in small object RWX Storage class,closed,2026-04-18T19:27:26Z,2026-04-18T19:58:56Z
+4288519572,Allow to unmarshal into applyconfig from client-go result,open,2026-04-18T16:14:43Z,2026-04-27T09:59:21Z
+4288179214,"Fix UI issue: ""Watch Video"" button breaks layout",closed,2026-04-18T13:53:17Z,2026-04-18T14:04:33Z
+4283794233,Add upgrade/downgrade scenario tests left out from beta,open,2026-04-17T15:50:42Z,2026-04-21T07:58:13Z
+4283465377,Kubelet restart triggers UnexpectedAdmissionError for pods using device plugins in both initContainers and containers,open,2026-04-17T14:53:05Z,2026-04-22T16:44:16Z
+4282761594,Scheduler's unschedulable_pods metric is not decremented when the pod is deleted from activeQ or backoffQ,open,2026-04-17T12:57:27Z,2026-04-17T13:09:39Z
+4281229725,[Flaking test] kubetest.Up gce-master-scale-correctness,closed,2026-04-17T08:29:45Z,2026-04-21T06:55:45Z
+4280981650,kubelet: QoS-level memory.min / memory.low is not cleared after MemoryQoS feature gate is disabled (regression from #138430),open,2026-04-17T07:40:27Z,2026-04-17T22:01:30Z
+4279156462,kubepods.slice cgroups (memory and cpu) are reset every minute by kubelet,closed,2026-04-16T23:43:06Z,2026-04-17T04:01:01Z
+4278373646,CRI API: Document expectations for PodSandboxConfig in CreateContainerRequest,open,2026-04-16T20:32:28Z,2026-04-28T07:49:01Z
+4277520394,Degraded scheduler performance due due to PVC mounts,open,2026-04-16T17:42:59Z,2026-04-18T17:36:55Z
+4277094785,etcd watcher scalability or improve decode efficiency,open,2026-04-16T16:27:57Z,2026-04-16T16:35:07Z
+4276542895,"Pod with deletion timestamp, may end up in unscheduledPods of PodGroupState indefinitely",open,2026-04-16T14:52:11Z,2026-04-17T13:48:42Z
+4275247179,"Establish ""Pod Shape"" as a part of Scalability Envelope",open,2026-04-16T11:09:43Z,2026-04-27T10:03:41Z
+4274814992,"Kubelet starves volume unmount during single-CP stacked-etcd upgrade, blocking new etcd pod and causing kubeadm timeout",open,2026-04-16T09:59:10Z,2026-04-28T08:09:55Z
+4274661153,statefulset repliocas mismatch for a rabbitmqcluster,closed,2026-04-16T09:32:14Z,2026-04-16T11:47:56Z
+4272710161,fsgroup does not work with Hostpath volume as non root user,open,2026-04-16T01:50:24Z,2026-04-16T01:50:33Z
+4271870942,[DRA] pod.status.resourceClaimStatuses entries are flapping,closed,2026-04-15T21:40:17Z,2026-04-23T01:51:35Z
+4270662233,[sig-node] Summary API should report resource usage through the stats api failing on ci-kubernetes-node-e2e-containerd-alpha-features,open,2026-04-15T17:46:56Z,2026-04-25T11:36:41Z
+4270219002,Add the ability for delete requests to provide the correct resource version,open,2026-04-15T16:17:50Z,2026-04-15T16:18:07Z
+4270149324,kubeadm init Unable to connect GET https://172.20.10.4:6443/healthz,closed,2026-04-15T16:03:37Z,2026-04-23T07:17:44Z
+4269594360,[Failing Test] [sig-cluster-lifecycle] kubeadm kinder jobs failing with pod pending timeout on 1.36,closed,2026-04-15T14:22:48Z,2026-04-28T14:21:02Z
+4265937072,Static Pods Are Not Retried Due to Admission Control Failures,open,2026-04-15T02:53:08Z,2026-04-17T06:32:43Z
+4265830719,Kubelet regression in 1.31 where pods get stuck in RunContainerError on OS with cgroupv1,closed,2026-04-15T02:17:44Z,2026-04-15T02:23:47Z
+4263447824,DRA Extended Resource: Promotion to GA,open,2026-04-14T16:28:17Z,2026-04-23T15:31:28Z
+4263413247,Kubelet: Metric definition linter violations,open,2026-04-14T16:21:36Z,2026-04-17T15:40:31Z
+4262005440,The IP address allocated by the IPv6 service exceeds the serviceCIDR range.,open,2026-04-14T12:26:14Z,2026-04-14T18:28:42Z
+4261056456,"Remove SchedulerQueueingHints feature gate entirely, since it's GA'd since v1.34",closed,2026-04-14T09:20:31Z,2026-04-23T13:30:56Z
+4260849255,Use MemAvailable of /proc/meminfo for memory eviction,open,2026-04-14T08:49:14Z,2026-04-14T11:49:00Z
+4260395282,kubelet: per-container ephemeral-storage limit not enforced for restartable init containers (sidecars),open,2026-04-14T07:49:30Z,2026-04-18T12:40:28Z
+4258809377,Job status shows Running when all pods are Pending,open,2026-04-14T01:09:22Z,2026-04-17T09:20:23Z
+4256816332,client-go/tools/cache: WaitForCacheSync uses deprecated wait.PollImmediateUntil,open,2026-04-13T17:48:46Z,2026-04-13T18:04:30Z
+4256627470,KEP-5304: requests with count>1 produce incorrect device metadata,closed,2026-04-13T17:12:55Z,2026-04-23T01:51:13Z
+4254326093,Support pluggable storage codec in client-go ThreadSafeStore for memory-efficient informer caching,open,2026-04-13T11:56:08Z,2026-04-13T14:10:49Z
+4250004838,`sig-arch-code-organization#unit-master-dependencies` is failing!,open,2026-04-12T21:30:06Z,2026-04-14T16:50:56Z
+4246007585,CVE-2026-39883: OpenTelemetry SDK PATH hijacking via BSD kenv command in kubelet and tracing components,closed,2026-04-11T23:28:15Z,2026-04-11T23:40:36Z
+4243490427,[Failing Test] [sig-scalability] ci-kubernetes-e2e-gce-scale-correctness kubetest2.Up,open,2026-04-11T07:12:59Z,2026-04-12T07:01:44Z
+4242220050,build errors due to git multi-pack-index version 2,open,2026-04-10T23:40:58Z,2026-04-13T20:21:41Z
+4310328777,kubectl describe node omits events when involvedObject.uid is null (kubelet-emitted node events are missing),open,2026-04-10T19:32:31Z,2026-04-22T16:12:23Z
+4240879992,No clean way to apply feature-gate-gated metric options ,open,2026-04-10T18:00:13Z,2026-04-24T13:59:26Z
+4240851747,CVE-2026-3865: CSI Driver for SMB path traversal via subDir may delete unintended directories on the SMB server,closed,2026-04-10T17:54:42Z,2026-04-11T03:41:50Z
+4239730489,DRA tests fail with image mirroring,closed,2026-04-10T14:16:00Z,2026-04-13T13:52:14Z
+4239484459,Race in scheduler can cause infinite growth of inFlightEvents,closed,2026-04-10T13:32:19Z,2026-04-15T13:15:04Z
+4238379864,edit ClusterRole grants namespace-scoped ServiceAccount impersonation — documentation + hardening request,closed,2026-04-10T10:10:30Z,2026-04-20T16:28:42Z
+4238240891,[Scheduling] Fast Host-Scoped Inter-Pod Affinity and Anti-Affinity,open,2026-04-10T09:49:33Z,2026-04-10T09:55:13Z
+4236693069,Kube-Scheduler Identity via Lease Objects: Use Cases and Production Evidence,open,2026-04-10T05:01:27Z,2026-04-23T12:55:22Z
+4232781523,Auto-calculated storage version defaults for alpha to beta transitions,open,2026-04-09T14:00:06Z,2026-04-09T20:04:39Z
+4229275102,Remove mutatingadmissionpolicy storage version override in v1.37,open,2026-04-09T03:47:26Z,2026-04-20T14:23:38Z
+4229162387,verify is failing on master,closed,2026-04-09T03:22:22Z,2026-04-09T14:00:45Z
+4228931706,kube-controller-manager: the maximum backoff 1000s was triggered incorrectly during DaemonSet  upgrade,open,2026-04-09T02:22:43Z,2026-04-24T03:23:48Z
+4227613792,[Feature Request] High-precision request.time in CEL for Mutating Admission Policy,open,2026-04-08T20:59:31Z,2026-04-08T21:00:45Z
+4224343541,WAS: PodGroupCycleState and PlacementCycleState,open,2026-04-08T12:03:05Z,2026-04-10T15:56:41Z
+4224191866,[Flaking Test] k8s.io/kubernetes/test/integration/scheduler/preemption preemption TestAsyncPreemption,open,2026-04-08T11:34:56Z,2026-04-08T17:56:32Z
+4224053449,"Unschedulable pods are kept in node nominator under """" key",open,2026-04-08T11:10:13Z,2026-04-08T18:15:12Z
+4223664212,Proposing unification and alignment of apiserver storage metrics (etcd3 and watch cache),open,2026-04-08T09:56:23Z,2026-04-17T16:29:34Z
+4221756176,[Failing Test] With kubeconfig's topologyOptions updated to static CPU Manager policy,open,2026-04-08T02:52:50Z,2026-04-09T19:42:56Z
+4219040248,WAS: Retry binding API calls on pod group binding cycle,open,2026-04-07T16:13:58Z,2026-04-11T21:36:43Z
+4218266826,[Flaking Test]  k8s.io/kubernetes/pkg/controller/podautoscaler.podautoscaler,open,2026-04-07T14:11:52Z,2026-04-07T14:55:20Z
+4217833584,Kubelet restart triggers UnexpectedAdmissionError for pods using device plugins in both initContainers and containers,closed,2026-04-07T13:01:30Z,2026-04-17T05:52:43Z
+4217017043,Scale max pod backoff time with the number of unscheduled pods in the cluster,open,2026-04-07T10:21:52Z,2026-04-10T08:37:32Z
+4215397195,Backward incompatibility of OpenAPI changes,open,2026-04-07T04:25:56Z,2026-04-09T13:27:53Z
+4214252533,Daemonset Rollout can get stuck when the Controller chooses bad nodes,closed,2026-04-06T21:50:10Z,2026-04-07T16:53:52Z
+4212584804,kubectl drain stuck in eviction retry loop even after pod is no longer on the drained node,open,2026-04-06T15:47:24Z,2026-04-18T18:27:56Z
+4211936651,[Flaking Test] [sig node] with swap stress LimitedSwap should be able to use more than the node memory capacity,open,2026-04-06T13:36:47Z,2026-04-24T23:54:55Z
+4211917610,[Flaking Test] [sig node] Security Context when creating a pod in the host PID namespace should not show its pid in the non-hostpid containers [Feature:HostAccess] [ubuntu01],closed,2026-04-06T13:32:48Z,2026-04-27T01:57:32Z
+4210052807,[Flaking tests] k8s.io/kubernetes/test/integration/storageversionmigrator - TestStorageVersionMigrationWithCRD,closed,2026-04-06T06:39:49Z,2026-04-27T11:08:08Z
+4209873359,watcherStream.buf in apiserver can grow indefinitely,open,2026-04-06T05:52:43Z,2026-04-17T16:26:07Z
+4207363207,"svc is flushing continually,kubedb install clickhouse，kubedb ops pod logs is flushing also，it seams svc create got problem？",open,2026-04-05T12:06:01Z,2026-04-06T06:01:48Z
+4203962928,"Namespace deletion reports ""All content successfully removed"" in status while pods with finalizers still remain",open,2026-04-04T07:10:30Z,2026-04-05T03:25:03Z
+4201326051,Unhelpful feature gate name `EnableWorkloadWithJob`,closed,2026-04-03T16:44:49Z,2026-04-09T17:42:23Z
+4199178505,"The watch ends within milliseconds, and the return code is 200.",open,2026-04-03T08:20:37Z,2026-04-09T14:14:53Z
+4193969832,Preloaded image pull spec poisoned by a pulled image,open,2026-04-02T11:36:40Z,2026-04-23T14:32:13Z
+4193904512,Should also order containerStatus by attempt or create time,open,2026-04-02T11:24:00Z,2026-04-02T11:25:20Z
+4192218128,client-go v1.32/v1.33 WatchList is incompatible with kube-apiserver v1.34,closed,2026-04-02T06:57:04Z,2026-04-02T15:50:24Z
+4191775752,apimachinery: Quantity.String() skips canonicalization for inputs with 3n decimal places,open,2026-04-02T05:31:57Z,2026-04-10T01:35:57Z
+4187722573,Migrate DRA components to support granular authorization on status updates,open,2026-04-01T15:12:39Z,2026-04-26T00:28:37Z
+4186971997,"Add Resource Quota Scope excluding Evicted, Completed and Failed pods",open,2026-04-01T13:31:22Z,2026-04-01T13:41:40Z
+4184742405,"kubelet: SyncPod kills liveness-failed containers sequentially, blocking replacement starts",open,2026-04-01T07:17:53Z,2026-04-08T17:36:11Z
+4183842271,VolumeRestrictions RemovePod assumes prefilter state exists even when PreFilter returned Skip,closed,2026-04-01T03:46:14Z,2026-04-02T02:49:50Z
+4182313506,Validate resource name length before admission,open,2026-03-31T20:57:22Z,2026-04-04T16:32:37Z
+4179672810,A goroutine leak in pkg/kubelet/config/file_linux_test.go,open,2026-03-31T14:25:17Z,2026-04-09T12:40:21Z
+4179638692,JSON tag missing for metav1.TypeMeta AuthenticationConfiguration results in generator failure,open,2026-03-31T14:20:56Z,2026-04-15T17:47:18Z
+4176720276,[Flaking tests] k8s.io/kubernetes/test/integration/apiserver - TestPodSubresourceAuth,closed,2026-03-31T07:31:53Z,2026-04-27T11:07:31Z
+4176427887,[Flaky Test] [sig-auth] TestPodSubresourceAuth - ci-kubernetes-integration-arm64-master,closed,2026-03-31T06:50:30Z,2026-03-31T16:32:21Z
+4176328163,Declarative Validation: Add `+k8s:exclusiveMaximum` declarative validation tag,closed,2026-03-31T06:37:30Z,2026-03-31T06:47:28Z
+4176282346,Declarative Validation: Add `k8s-duration` format to `+k8s:format` declarative validation tag,closed,2026-03-31T06:32:09Z,2026-03-31T06:46:40Z
+4176281106,Declarative Validation: Add `k8s-date` format to `+k8s:format` declarative validation tag,closed,2026-03-31T06:32:01Z,2026-03-31T06:46:26Z
+4176280299,Declarative Validation: Add `k8s-date-time` format to `+k8s:format` declarative validation tag,closed,2026-03-31T06:31:54Z,2026-03-31T06:46:19Z
+4176278503,[Declarative Validation] Add `k8s-uri` format to `+k8s:format` declarative validation tag,closed,2026-03-31T06:31:41Z,2026-03-31T07:35:30Z
+4176277223,[Declarative Validation] Enable `k8s-ip` format in `+k8s:format` declarative validation tag,open,2026-03-31T06:31:33Z,2026-04-02T03:55:32Z
+4176274827,Declarative Validation: Add `+k8s:exclusiveMaximum` declarative validation tag,closed,2026-03-31T06:31:16Z,2026-03-31T16:55:15Z
+4176274153,[Declarative Validation] Add `+k8s:pattern` declarative validation tag,closed,2026-03-31T06:31:11Z,2026-04-21T00:45:30Z
+4176273295,Declarative Validation: Add `+k8s:exclusiveMinimum` declarative validation tag,closed,2026-03-31T06:31:05Z,2026-03-31T06:47:19Z
+4176271237,[Flaking tests] k8s.io/kubernetes/test/integration/apiserver/discovery - TestCRD/Race,closed,2026-03-31T06:30:49Z,2026-04-27T11:06:28Z
+4176260999,[Declarative Validation] Add `k8s-cidr` format to `+k8s:format` declarative validation tag,open,2026-03-31T06:29:28Z,2026-04-03T12:38:51Z
+4176259180,[Declarative Validation] Add `+k8s:maxProperties` declarative validation tag,closed,2026-03-31T06:29:15Z,2026-04-23T01:50:59Z
+4176257833,[Declarative Validation] Add `+k8s:minProperties` declarative validation tag,open,2026-03-31T06:29:06Z,2026-03-31T07:34:28Z
+4176255426,[Declarative Validation] Feature: Add `+k8s:multipleOf` declarative validation tag,open,2026-03-31T06:28:48Z,2026-04-06T18:34:32Z
