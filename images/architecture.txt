@@ -1,0 +1,30 @@
+1. Data Source
+    GitHub Issues API
+        Source of raw data
+        Example: GitHub Issues API
+
+2. Data Extraction Layer
+    Python Extract Script (requests)
+        Pulls data from API
+        Handles pagination
+
+3. Transformation Layer
+    Python Transform (pandas)
+        Cleans data
+        Converts timestamps
+        Creates:
+            resolution_time_hours
+            sla_status
+
+4. Storage Layer
+    PostgreSQL
+        Stores cleaned structured data
+        Used for querying + analytics
+        PostgreSQL Database
+
+5. Visualization Layer
+    Power BI Dashboard
+        Dashboards
+        KPIs
+        SLA metrics
+        Trends over time
