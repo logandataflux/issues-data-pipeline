@@ -1,10 +1,28 @@
 import pandas as pd
 import psycopg2
 
-# Load cleaned data
+#Load cleaned data
 df = pd.read_csv("data/clean_issues.csv")
 
-# Connect to PostgreSQL
+# CLEAN DATAFRAME
+
+#Remove accidental index column
+df = df.loc[:, ~df.columns.str.contains("^Unnamed")]
+
+#Ensure correct column order
+required_cols = [
+    "id",
+    "title",
+    "state",
+    "created_at",
+    "updated_at",
+    "resolution_time_hours",
+    "sla_status"
+]
+
+df = df[required_cols]
+
+#CONNECT TO POSTGRESQL
 conn = psycopg2.connect(
     dbname="issues_db",
     user="postgres",
@@ -15,16 +33,33 @@ conn = psycopg2.connect(
 
 cur = conn.cursor()
 
-# Insert data
+#INSERT DATA
 for _, row in df.iterrows():
     cur.execute("""
-        INSERT INTO github_issues
+        INSERT INTO github_issues (
+            id,
+            title,
+            state,
+            created_at,
+            updated_at,
+            resolution_time_hours,
+            sla_status
+        )
         VALUES (%s, %s, %s, %s, %s, %s, %s)
         ON CONFLICT (id) DO NOTHING;
-    """, tuple(row))
+    """, (
+        row["id"],
+        row["title"],
+        row["state"],
+        row["created_at"],
+        row["updated_at"],
+        row["resolution_time_hours"],
+        row["sla_status"]
+    ))
 
+#COMMIT + CLOSE
 conn.commit()
 cur.close()
 conn.close()
 
-print("Data loaded into PostgreSQL")
+print("Data loaded into PostgreSQL successfully")
