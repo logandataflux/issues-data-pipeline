@@ -105,5 +105,5 @@ The dataset is visualized using Power BI to provide:
 
 ### 1. Clone repository
 ```bash
-git clone https://github.com/your-username/issues-data-pipeline.git
+git clone https://github.com/logandataflux/issues-data-pipeline.git
 cd issues-data-pipeline
