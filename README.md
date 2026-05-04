@@ -1,13 +1,13 @@
-# Jira-Style Data Engineering Pipeline (GitHub Issues Analytics)
+# **Jira-Style Data Engineering Pipeline (GitHub Issues Analytics)**
 
-## Overview
+## **Overview**
 This project is an end-to-end data engineering pipeline that extracts issue data from the GitHub API, transforms it into analytics-ready format, loads it into PostgreSQL, and visualizes insights using Power BI.
 
 The goal is to simulate a **Jira-style ticket analytics system** to analyze operational performance, SLA compliance, and ticket resolution trends.
 
 ---
 
-## Problem Statement
+## **Problem Statement**
 Organizations need visibility into:
 - Ticket resolution performance
 - SLA compliance
@@ -17,7 +17,7 @@ However, raw API data is not analytics-ready and requires transformation before 
 
 ---
 
-## Tech Stack
+## **Tech Stack**
 - Python
 - SQL
 - PostgreSQL
@@ -27,7 +27,7 @@ However, raw API data is not analytics-ready and requires transformation before 
 
 ---
 
-## Architecture
+## **Architecture**
 
 GitHub API  
 → Python Extract Script  
@@ -38,7 +38,7 @@ GitHub API
 
 ---
 
-## ETL Pipeline Steps
+## **ETL Pipeline Steps**
 
 ### 1. Extract
 - Pulls issue data from GitHub API
@@ -60,7 +60,7 @@ GitHub API
 
 ---
 
-## Data Model
+## **Data Model**
 
 Table: `github_issues`
 
@@ -76,7 +76,7 @@ Table: `github_issues`
 
 ---
 
-## Key Insights
+## **Key Insights**
 
 - Ticket volume analysis across issue states
 - Average resolution time per issue
@@ -85,7 +85,7 @@ Table: `github_issues`
 
 ---
 
-## Power BI Dashboard
+## **Power BI Dashboard**
 
 The dataset is visualized using Power BI to provide:
 
@@ -101,7 +101,7 @@ The dataset is visualized using Power BI to provide:
 
 ---
 
-## Business Value
+## **Business Value**
 
 This project demonstrates how raw engineering data can be transformed into actionable insights for:
 
@@ -112,7 +112,7 @@ This project demonstrates how raw engineering data can be transformed into actio
 
 ---
 
-## How to Run This Project
+## **How to Run This Project**
 
 ### 1. Clone repository
 ```bash
