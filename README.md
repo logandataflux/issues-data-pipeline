@@ -40,12 +40,12 @@ GitHub API
 
 ## **ETL Pipeline Steps**
 
-### 1. Extract
+### **1. Extract**
 - Pulls issue data from GitHub API
 - Uses pagination to retrieve multiple pages
 - Filters out pull requests
 
-### 2. Transform
+### **2. Transform**
 - Converts timestamps into datetime format
 - Engineers resolution time (hours)
 - Creates SLA classification:
@@ -53,7 +53,7 @@ GitHub API
   - At Risk
   - Breached
 
-### 3. Load
+### **3. Load**
 - Loads cleaned data into PostgreSQL
 - Ensures schema consistency
 - Handles duplicate records using primary key constraints
